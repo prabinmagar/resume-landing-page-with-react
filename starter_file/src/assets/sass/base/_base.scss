@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  cursor: none;
+  min-height: 100vh;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: unset;
+  cursor: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+body{
+  line-height: 1.6;
+  font-size: 16px;
+  background: $night;
+  font-family: $font-primary;
+  letter-spacing: 0.2px;
+  color: #f7f7f7;
+}
+
+@media(max-width: 420px){
+  p{
+    font-size: 14px!important;
+  }
+  h3{
+    font-size: 16px!important;
+  }
+}

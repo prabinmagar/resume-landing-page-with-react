@@ -1,0 +1,66 @@
+.experience-sc{
+    .experience-content{
+        &.dotted-border-left{
+            &::after{
+                top: 10px;
+            }
+        }
+    }
+
+    .experience-list{
+        row-gap: 20px;
+        column-gap: 32px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 24px;
+        padding: 16px 0;
+
+        @media(max-width: 992px){
+            grid-template-columns: 100%;
+            column-gap: 20px;
+        }
+    }
+    .experience-item{
+        padding: 12px 0;
+    }
+    .exp-time{
+        color: $gray;
+        font-size: 15px;
+        margin-bottom: 4px;
+        column-gap: 4px;
+    }
+    .exp-position{
+        margin-bottom: 10px;
+        column-gap: 20px;
+        font-size: 18px;
+
+        .exp-position-text{
+            font-weight: 700;
+        }
+    }
+    .exp-company{
+        gap: 10px;
+        .company-logo{
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            border: 2px solid $white;
+        }
+        .company-name{
+            font-weight: 600;
+        }
+    }
+    .exp-description{
+        margin: 12px 0 4px 0;
+    }
+    .exp-links{
+        a{
+            font-size: 15px;
+            text-decoration: underline;
+            display: flex;
+            align-items: center;
+            column-gap: 8px;
+            color: $mauve;
+        }
+    }
+}

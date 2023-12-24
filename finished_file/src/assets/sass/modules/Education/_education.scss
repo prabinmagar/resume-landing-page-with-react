@@ -1,0 +1,39 @@
+.education-sc{
+    .edu-title{
+        margin-bottom: 6px;
+        gap: 10px;
+    }
+    .edu-icon{
+        width: 20px;
+    }
+    .education-list{
+        margin-left: 24px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 12px;
+        column-gap: 24px;
+        padding: 16px 0;
+
+        @media(max-width: 992px){
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 20px;
+        }
+
+        @media(max-width: 576px){
+            grid-template-columns: 100%;
+        }
+    }
+    .education-item{
+        padding: 12px 0;
+        @media(max-width: 576px){
+            padding: 10px 0;
+        }
+    }
+    .edu-course{
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .edu-info{
+        margin-left: 30px;
+    }
+}
